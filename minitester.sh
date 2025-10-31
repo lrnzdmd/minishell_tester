@@ -45,7 +45,7 @@ for test_file in ./test_cases/*; do
 
     mkdir -p ./mini_outfiles
     mkdir -p ./bash_outfiles
-    echo -e "${BLUE}[${YELLOW} Esecuzione test ${ORANGE}$test_file ${BLUE}]${DEFAULT}\n"
+    echo -e "${BLUE}[${YELLOW} Executing test: ${ORANGE}$test_file ${BLUE}]${DEFAULT}\n"
 
     while IFS= read -r COMMAND || [[ -n "$COMMAND" ]]; do
         if [[ -z "$COMMAND" || "$COMMAND" =~ ^\s*# ]]; then
