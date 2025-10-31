@@ -1,0 +1,71 @@
+|
+| echo
+echo |
+echo | | cat
+>
+<
+>>
+>>>
+echo >
+echo <
+echo >>
+echo > ./outfiles/file1 > ./outfiles/file2
+echo < ./outfiles/file1 < ./outfiles/file2
+echo >> ./outfiles/file1 >> ./outfiles/file2
+><
+<>
+>|
+<|
+echo hi | >
+echo hi | <
+cat < | >
+<<
+<< |
+echo << delimiter |
+<< <
+<< >
+<< <<
+>>><
+>><
+< ><
+< >>
+>>|
+<|
+| | | echo
+echo | | |
+>>< >
+> > >
+< < <
+>> >> >>
+| >
+| <
+| >>
+| <<
+> | echo
+< | cat
+>> | ls
+<< EOF | pwd
+>< file
+echo > file > >
+cat < file < <
+ls >> file >> >>
+|>
+|<
+|>>
+|<<
+echo>|
+cat<|
+ls>>|
+>|>
+<|<
+>>>>>
+<<<<<
+echo | | | | |
+> > > > > file
+< < < < < file
+>> >> >> >> >> file
+cat<file|wc
+>>>
+<<<
+>><
+<<>

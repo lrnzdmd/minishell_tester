@@ -1,0 +1,16 @@
+env | sort | grep -v SHLVL | grep -v ^_
+cat ./test_files/infile_big | grep oi
+cat Makefile | grep ".c"
+export GHOST=123 | env | grep GHOST
+echo "hello world" | wc -c
+pwd | cat
+ls -la | grep "d"
+ls -la | pwd
+grep "nonext string" ./test_files/infile | wc -l
+cat < ./test_files/infile | wc -l
+echo "test" | cat > ./outfiles/pipe_out
+cat < ./test_files/infile | grep a | wc -l > ./outfiles/pipe_redir_out
+echo "input from echo" | cat < ./test_files/infile
+echo "write to outfile!" > ./outfiles/file_gets_this | wc -c
+echo hi | cat | cat | cat | ls
+echo hello | grep h | wc -c

@@ -1,0 +1,145 @@
+pwd
+pwd | cat
+pwd | grep /
+pwd | wc -l
+pwd > /tmp/pwd_out.txt
+pwd | cat | cat
+pwd /tmp
+pwd pwd
+pwd < /dev/null
+pwd > /dev/null
+pwd | 
+pwd >
+cd . | pwd
+cd .. | pwd
+cd ../.. | pwd
+cd ./test | pwd
+cd ./nonexistent | pwd
+cd ././. | pwd
+cd ./../. | pwd
+cd ../../../../../../ | pwd
+cd ... | pwd
+cd .... | pwd
+cd ./. | pwd
+cd ../. | pwd
+cd ./../test/dir | pwd
+cd ./././././. | pwd
+cd /nonexistent | pwd
+cd /tmp/nonexistent | pwd
+cd ./missing/dir | pwd
+cd ././missing | pwd
+cd | pwd
+cd "" | pwd
+cd '' | pwd
+cd . | echo test | pwd
+cd .. | pwd
+cd . < /dev/null | pwd
+cd cd | pwd
+cd /absolute/path | pwd
+echo hello
+echo -n hello
+echo -n
+echo -n -n test
+echo -n "test with spaces"
+echo test1 test2 test3
+echo -n hello world
+echo -n "hello" "world"
+echo
+echo ""
+echo -n ""
+echo -n -n
+echo -n -n -n
+echo test
+echo "test"
+echo 'test'
+echo "multiple words here"
+echo    multiple     spaces
+echo -n -n -n -n test
+echo -n -n -n -n -n
+echo -N test
+echo -ntest
+echo test test test test
+echo -n -n
+echo -n ""  -n
+echo echo
+echo test | cat
+echo -n test | cat
+echo hello | grep hello
+echo hello | wc -w
+echo test > /tmp/test.txt
+echo -n output > /tmp/out.txt
+echo test > /dev/null
+echo error
+echo test < /dev/null
+echo -n | cat
+echo | cat
+echo | cat | cat
+echo | | cat
+echo >
+export VAR=value
+export PATH=/usr/bin
+export TEST="hello world"
+export EMPTY=
+export NO_EQUAL
+export ""
+export =value
+export 123VAR=test
+export _VAR=test
+export VAR="quotes and spaces"
+export VAR=val1 VAR2=val2
+export MULTI="test" ANOTHER=value
+export TEST
+export TEST=
+export A= B= C=
+export VAR='single quotes'
+export 123=value
+export TEST=value
+export VAR value
+export A=1 B=2 C=3
+export VAR
+export VAR VAR2
+export TEST=value | cat
+export TEST=value
+export export
+export >
+env | grep -v _= | sort
+env | grep -v _= | head -5 | sort
+env | grep PATH 
+env | wc -l
+env | cat | grep -v _= | sort
+env > /tmp/env_out.txt
+env | head -1 
+env | grep -v _= | head -5
+env | grep USER
+env | cat | cat | grep -v _= | sort
+env | grep TEST | cat
+env env | grep -v _= | sort
+unset PATH
+unset HOME
+unset NONEXISTENT
+unset VAR1 VAR2 VAR3
+unset _VAR
+unset 123
+unset ""
+unset TEST TEST2 TEST3
+unset
+unset A B C D E F
+unset X Y Z
+unset VAR | echo test
+unset unset
+exit
+exit 0
+exit 1
+exit 42
+exit 127
+exit 255
+exit -1
+exit 999
+exit 256
+exit 2147483647
+exit abc
+exit "0"
+exit ''
+exit "36"
+exit test
+exit exit
